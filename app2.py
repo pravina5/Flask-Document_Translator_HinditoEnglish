@@ -11,7 +11,7 @@ translator = google_translator()
 
 app = Flask(__name__,template_folder='templates')
 
-UPLOAD_FOLDER_1 = 'C:\\Users\\admin\\Desktop\\proj -frontend\\'
+UPLOAD_FOLDER_1 = 'templates'
 
 
 
