@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'FlaskDocumentTranslator'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_d1abe80ef3ab406e9ed7f9756f2a60f3 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_2ff382cca9c14d1581b8b938523167d6 }}
