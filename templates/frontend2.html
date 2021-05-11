@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Language Translator</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">English to Hindi translator</span></h2>
+            <div class='description'>
+    			<!--p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p-->
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+            
+    		<form action="{{ url_for('predict') }}" method="POST" enctype=multipart/form-data>
+                <h2 style="position: center;color:blue">Upload a file</h2>
+        		<input type="file" name="myfile" style="position: relative;top:20px;left :50px;">
+                <input type="submit" class="my-cta-button" value ="Predict" style="position: absolute;left: 700px;top: 300px;color :#4d089a;">
+        	</form>
+    	</div>
+    	<br></br>
+    	<!--results-->
+    	<div class="results" >
+        <h2 style="color:red ;background-color: white;" >
+        
+    	{{prediction}}
+        </h2>
+        </div>
+
+        <!-- Footer -->
+        <div class='footer'>
+            <p class='footer-description'>English to Hindi Translator</p>
+        </div>
+
+    </body>
+</html>
+
