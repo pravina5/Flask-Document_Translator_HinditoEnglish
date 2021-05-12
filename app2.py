@@ -11,7 +11,7 @@ translator = google_translator()
 
 app = Flask(__name__,template_folder='templates')
 
-UPLOAD_FOLDER_1 = 'https://github.com/pravina5/Flask-Document_Translator_HinditoEnglish/templates'
+UPLOAD_FOLDER_1 = '../templates'
 
 
 
